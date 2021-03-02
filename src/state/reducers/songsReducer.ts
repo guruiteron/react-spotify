@@ -4,7 +4,7 @@ import { Action } from '../actions';
 interface SongsState {
   loading: boolean;
   error: string | null;
-  data: string[];
+  data: { id: string, name: string, image_url: string, uri: string }[];
 }
 
 const initialState = {
